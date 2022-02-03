@@ -9,7 +9,7 @@ const {handleSubmit, register, reset} = useForm();
 const dispatch = useDispatch();
 
 const submit = (data) => {
-    dispatch(addName(data))
+    dispatch(addName({data}))
     reset()
 }
 return(

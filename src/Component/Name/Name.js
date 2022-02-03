@@ -16,9 +16,7 @@ const Name = ({name: {id, name, Nominal}}) => {
         <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', marginTop: '100px', gap: '20px'}}>
             <label className={`${Nominal ? 'completed' : ''}`}>
                 <input type="checkbox" onChange={nameNominal} value={Nominal} checked={Nominal}/> {name}</label>
-            <div>Name: {name} </div>
-
-            <button onClick={() => {deleteNameId(id)}}>Delete</button>
+                      <button onClick={() => {deleteNameId(id)}}>Delete</button>
         </div>
 
     )
